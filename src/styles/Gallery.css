@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.train-quote{
+    margin-top: 13rem;
+    background-color: whitesmoke;
+    height: 450px;
+}
+
+.train-quote p:first-child{
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 2.5rem;
+
+}
+
+.train-quote p:last-child{
+    color: black;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    width: 70%;
+}
