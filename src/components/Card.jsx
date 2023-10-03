@@ -1,26 +1,28 @@
 import "../styles/Card.css";
-import imageFile from "./../assets/images/04.jpg";
+import cardFile from "./../assets/images/028.png";
 
 
 const Card = () => {
     const images = [
-		{id: 1,src: imageFile},
-		{id: 2,src: imageFile},
-		{id: 3,src: imageFile},
-		{id: 4,src: imageFile},
-		{id: 5,src: imageFile},
-		{id: 6,src: imageFile},
-		{id: 7,src: imageFile},
-		{id: 8,src: imageFile},
-		{id: 9,src: imageFile},
+		{id: 1,src: cardFile},
+		{id: 2,src: cardFile},
+		{id: 3,src: cardFile},
+		{id: 4,src: cardFile},
+		{id: 5,src: cardFile},
+		{id: 6,src: cardFile},
+		{id: 7,src: cardFile},
+		{id: 8,src: cardFile}
 	];
     return ( 
         <>
-            <div className="gallery">
+            <div className="card-wrapper">
 			{images.map((image) => {
 				return (
-					<div className="image-container">
-						<img className="image" src={image.src} alt="" key={image.id} />
+					<div className="card-container">
+						<img className="card" src={image.src} alt="" key={image.id} />
+                        <h3>Card Title</h3>
+                        <p>This is the description</p>
+                        <button>View more</button>
 					</div>
 				);
 			})}
