@@ -29,3 +29,18 @@
     font-size: 20px;
     width: 70%;
 }
+
+.image {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

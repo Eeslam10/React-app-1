@@ -1,4 +1,5 @@
 import "../styles/Gallery.css";
+import imageFile from "./../assets/images/04.jpg";
 
 const Gallery = () => {
     const images = [
@@ -18,9 +19,15 @@ const Gallery = () => {
                 <p>If a train doesn't stop at your station, then it's not your train.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla expedita quae suscipit eveniet cum illo quaerat dignissimos accusamus vel.</p>
             </div>
-            <div className="photos">
-                
-            </div>
+            <div className="gallery">
+			{images.map((image) => {
+				return (
+					<div className="image-container">
+						<img className="image" src={image.src} alt="" key={image.id} />
+					</div>
+				);
+			})}
+		</div>
         </>
      );
 }
