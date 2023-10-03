@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
+.venues {
+    background-color: whitesmoke;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.venues > p{
+    padding-top: 2.5rem;
+    color: #242424;
+    font-size: 50px;
+}
+
 h3{
- 
     color: whitesmoke;
 }
 
@@ -16,7 +26,7 @@ h3{
     gap: 2rem;
     /* padding-left: 5rem; */
     background-color: whitesmoke;
-    margin-top: 7rem;
+    /* margin-top: 4rem; */
     padding-top: 3rem;
 }
 
@@ -34,7 +44,12 @@ h3{
 }
 
 button {
-    /* background-color: lightslategray; */
     color: whitesmoke;
+    margin-top: 1rem;
+}
 
+button:hover {
+    transition: 0.75s;
+    background-color: whitesmoke;
+    color: #242424;
 }

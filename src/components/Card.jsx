@@ -15,6 +15,9 @@ const Card = () => {
 	];
     return ( 
         <>
+        <div className="venues">
+           <p>Our Venues for Booking</p>
+        </div>
             <div className="card-wrapper">
 			{images.map((image) => {
 				return (
@@ -30,5 +33,5 @@ const Card = () => {
         </>
      );
 }
- 
+
 export default Card;
